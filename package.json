@@ -1,0 +1,33 @@
+{
+  "name": "gito",
+  "version": "0.0.1",
+  "description": "Gito is a git helper that commits every change you make separetely for a better time controll",
+  "main": "src/index.ts",
+  "type": "commonjs",
+  "author": {
+    "name": "Arian Mirahmadi",
+    "email": "mirarianmir@gmail.com"
+  },
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc -p .",
+    "help": "./dist/server/index.js -h",
+    "builp": "npm run build && npm run help"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "@types/prompts": "^2.0.14",
+    "@types/yargs": "^17.0.8",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "chokidar": "^3.5.3",
+    "prompts": "^2.4.2",
+    "yargs": "^17.3.1"
+  }
+}
